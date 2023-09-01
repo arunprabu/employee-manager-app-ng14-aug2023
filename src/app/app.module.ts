@@ -16,6 +16,7 @@ import { ReportsComponent } from './concepts/components/reports/reports.componen
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeesModule } from './employees/employees.module';
+import { ProductsModule } from './products/products.module';
 
 // Main Switching Box
 @NgModule({
@@ -37,7 +38,8 @@ import { EmployeesModule } from './employees/employees.module';
     AppRoutingModule, 
     FormsModule,
     HttpClientModule,
-    EmployeesModule
+    EmployeesModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent] // AppModule is bootstrapped with a comp -- AppComponent

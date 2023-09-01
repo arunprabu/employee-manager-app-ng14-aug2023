@@ -137,7 +137,7 @@ Casing Types
       Classes [NOT PART OF OUR COURSE]
       Pipes
       Guards [NOT PART OF OUR COURSE]
-      Modules 
+      Modules [DONE]
       Interceptors [NOT PART OF OUR COURSE]
 
     Concepts
@@ -152,6 +152,7 @@ Casing Types
       Unit Testing 
       Angular Material Integration 
       Git 
+      Lazy Loading 
 
 Thinking in Angular
 ---
