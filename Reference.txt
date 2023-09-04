@@ -143,12 +143,12 @@ Casing Types
     Concepts
     ----
       Data Binding [DONE]
-      Cross Components Communication [PARTIALLY DONE]
+      Cross Components Communication [DONE]
       Debugging [DONE]
       Routing [DONE]
       REST API Calls [DONE]
       RxJS, Observables, Subscription [DONE]
-      Life Cycle Hooks [TODAY]
+      Life Cycle Hooks [DONE]
       Unit Testing 
       Angular Material Integration 
       Git 

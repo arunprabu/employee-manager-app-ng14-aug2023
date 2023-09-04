@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
+import { CartDataService } from 'src/app/shared/services/cart-data.service';
 
 @Component({
   selector: 'app-products',
@@ -30,13 +31,12 @@ import { ProductsService } from '../../services/products.service';
                 </p>
                 <div class="row">
                   <div class="col">
-                    <p class="btn btn-danger btn-block">
-                      {{ product.price }}
-                    </p>
+                    <p>$ {{ product.price }}</p>
                   </div>
                   <div class="col">
                     <a
                       class="btn btn-success btn-block"
+                      (click)="handleAddToCart(product)"
                       >Add to cart</a
                     >
                   </div>
@@ -53,13 +53,20 @@ import { ProductsService } from '../../services/products.service';
 export class ProductsComponent implements OnInit {
   products!: any[];
 
-  constructor(private productsService: ProductsService) {}
+  constructor(
+    private productsService: ProductsService,
+    private cartDataService: CartDataService
+  ) {}
 
   ngOnInit(): void {
-    this.productsService.getProducts()
-      .subscribe((res: any) => {
-        console.log(res);
-        this.products = res;
-      })
+    this.productsService.getProducts().subscribe((res: any) => {
+      console.log(res);
+      this.products = res;
+    });
+  }
+
+  handleAddToCart(product: any) {
+    console.log(product);
+    this.cartDataService.addToCart(product);
   }
 }
