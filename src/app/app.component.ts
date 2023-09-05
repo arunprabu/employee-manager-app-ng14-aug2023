@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // ts
+  title: any = 'Emp Manager App!';
+  courseName = 'Angular 14';
 }
+

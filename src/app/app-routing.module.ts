@@ -10,7 +10,19 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'concepts', component: ConceptsComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  {
+    path: 'employees',
+    loadChildren: () =>
+      import('./employees/employees.module').then(
+        m => m.EmployeesModule
+      )
+  },
+  {
+    path: 'products',
+    loadChildren: () =>
+      import('./products/products.module').then(m => m.ProductsModule)
+  }
 ];
 
 // Main Entry gate
@@ -18,4 +30,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)], // registering routes
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

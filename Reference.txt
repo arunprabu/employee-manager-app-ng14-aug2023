@@ -22,6 +22,10 @@ Webapps
           6. Active Menu should be set [TODO]
           7. Page Title should be changed [TODO]
 
+        Disadvantages of SPA
+        -----
+          1. Initial Loading will take longer (fixable using Lazy Loading a Module in ng)
+          2. Not Search Engine friendly (fixable using SSR -- angular universal)
 
         SPA Tools: 
         ----
@@ -130,12 +134,12 @@ Casing Types
 
     Building Blocks 
     ---
-      Components 
+      Components [DONE]
       Directives [DONE -- TASK GIVEN]
       Services [DONE]
       Interfaces  [DONE]
       Classes [NOT PART OF OUR COURSE]
-      Pipes
+      Pipes [DONE]
       Guards [NOT PART OF OUR COURSE]
       Modules [DONE]
       Interceptors [NOT PART OF OUR COURSE]
@@ -152,7 +156,8 @@ Casing Types
       Unit Testing 
       Angular Material Integration 
       Git 
-      Lazy Loading 
+      Lazy Loading [DONE]
+      Change Detection
 
 Thinking in Angular
 ---
@@ -373,4 +378,83 @@ Angular Forms
         1. larger learning curve 
 
 
-Modules
+Automation Testing 
+-------------
+  0. Static Type Checking 
+      Tools: TypeScript
+
+  1. Unit Testing 
+      * Tesitng the tiny individual unit 
+      * Testing the comp, service, pipes, directives in isolation 
+      * Testing the comp w/o connecting to REST API 
+      * Bug Reduction Density: 40-80% 
+
+      Tools: Jasmine Js, Karma
+      
+  2. Integration Testing 
+      * Differnt units, modules,  or components tested as combined entity
+      * behavior of the app would be tested 
+
+      Tools: Jasmine Js, Karma
+
+  3. E2E / End to End Testing  
+      * Testing the whole app 
+      
+      Tools: Selenium or CypressJS or Protractor or Cucumber or Tosca or Playwright 
+      
+
+2 Approaches / Modern Software Dev Methodologies (as of 2023)
+----
+  Dev writes tests => Dev write fn code => (TOOLS) => instant feedback of success/failure 
+
+  1. Test Driven Development (TDD)
+      * is a programming Practice that instructs the dev to write NEW CODE only if an automated test has failed 
+
+      dev writes test cases 
+        (Instant Feedback of Failure/bug)
+          dev writes fn code 
+            (Instant Feedback of Success)
+              [CODE COMPLETE]
+
+      Testing Pattern: AAA (Arrange, Act, Assert)
+      Tools: JEST JS, Mocha, Chai 
+      Used in React Projects normally 
+
+  2. Behavior Driven Development (BDD)  -- [TO LEARN]
+      * is an agile s/w methodology 
+      * an app is documented and designed around the behaviour the end user expects to experience
+
+      dev writes test cases (around the behavior of the app)
+        (Instant Feedback of Failure/bug)
+          dev writes fn code 
+            (Instant Feedback of Success)
+              [CODE COMPLETE]
+
+      Testing Pattern: Given/When/Then
+      Tools: Jasmine JS with Karma 
+
+Tools in Detail
+=========
+  Jasmine JS -- is unit testing framework 
+  Karma JS - Test Runner 
+
+What will you learn?
+----
+  1. How to write tests?
+  2. Where to write? 
+  3. How to test our app against the identified tests?
+
+=============
+
+Course Plan 
+====
+  1. Testing components
+    1.1 TS code 
+        variables 
+        methods 
+    1.2 HTML Code 
+    1.3 CSS Code 
+
+  2. Testing Services 
+  3. Testing Directives (Todo)
+  4. Testing Pipes (Todo)

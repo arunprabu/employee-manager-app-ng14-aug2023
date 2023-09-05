@@ -15,7 +15,6 @@ import { UserInfoComponent } from './concepts/components/user-info/user-info.com
 import { ReportsComponent } from './concepts/components/reports/reports.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 import { HttpClientModule } from '@angular/common/http';
-import { EmployeesModule } from './employees/employees.module';
 import { ProductsModule } from './products/products.module';
 
 // Main Switching Box
@@ -37,9 +36,7 @@ import { ProductsModule } from './products/products.module';
     BrowserModule, 
     AppRoutingModule, 
     FormsModule,
-    HttpClientModule,
-    EmployeesModule,
-    ProductsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent] // AppModule is bootstrapped with a comp -- AppComponent

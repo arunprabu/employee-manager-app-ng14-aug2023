@@ -7,9 +7,9 @@ import { RouterModule } from '@angular/router';
 
 // nested or child routes
 const employeesRoutes = [
-  { path: 'employees', component: EmployeesComponent },
-  { path: 'employees/add', component: AddEmployeeComponent },
-  { path: 'employees/:id', component: EmployeeDetailsComponent } // id -- is URL Param
+  { path: '', component: EmployeesComponent },
+  { path: 'add', component: AddEmployeeComponent },
+  { path: ':id', component: EmployeeDetailsComponent } // id -- is URL Param
 ];
 
 @NgModule({

@@ -6,8 +6,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 
 // child or nested routing
 const productsRoutes: Routes = [
-  { path: 'products', component: ProductsComponent },
-  { path: 'products/:id', component: ProductDetailsComponent }
+  { path: '', component: ProductsComponent },
+  { path: ':id', component: ProductDetailsComponent }
 ]
 
 @NgModule({
