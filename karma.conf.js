@@ -30,19 +30,6 @@ module.exports = function (config) {
         './coverage/employee-manager-app-ng14'
       ),
       subdir: '.',
-      reporters: [{ type: 'html' }, { type: 'text-summary' }]
-    },
-    reporters: ['progress', 'kjhtml'],
-    port: 9876,
-    colors: true,
-    logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: ['Chrome'],
-    singleRun: false,
-    restartOnFileChange: true,
-    coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/<project-name>'),
-      subdir: '.',
       reporters: [{ type: 'html' }, { type: 'text-summary' }],
       check: {
         global: {
@@ -52,6 +39,14 @@ module.exports = function (config) {
           lines: 80
         }
       }
-    }
+    },
+    reporters: ['progress', 'kjhtml'],
+    port: 9876,
+    colors: true,
+    logLevel: config.LOG_INFO,
+    autoWatch: true,
+    browsers: ['Chrome'],
+    singleRun: false,
+    restartOnFileChange: true
   });
 };
