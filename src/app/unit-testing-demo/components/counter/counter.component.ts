@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div>
       <h2 
-        style="background-color: rgb(255, 0, 0);">Testing Counter Styles, CSS and Events</h2>
+        style="background-color: rgb(255, 0, 0);">Testing Counter Styles, CSS and Events!</h2>
       <p class="counter-value">Counter Value: {{ counter }}</p>
 
       <button
