@@ -4,6 +4,7 @@ import { AppComponent } from './app.component'; // what comp is taken up for tes
 
 // Group of related tests == TEST SUITE 
 describe('AppComponent', () => {
+  // setting up 
   beforeEach(async () => {
     // like app-module 
     await TestBed.configureTestingModule({
@@ -49,6 +50,6 @@ describe('AppComponent', () => {
     // taking up App Comp class file (ts) for testing
     const app = fixture.componentInstance;
     // the following is must
-    expect(app.courseName).toEqual('Angular 14');
+    expect(app.courseName).toBe('Angular 14');
   });
 });

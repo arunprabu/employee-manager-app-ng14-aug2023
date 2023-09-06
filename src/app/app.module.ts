@@ -16,6 +16,8 @@ import { ReportsComponent } from './concepts/components/reports/reports.componen
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsModule } from './products/products.module';
+import { UnitTestingDemoComponent } from './unit-testing-demo/components/unit-testing-demo/unit-testing-demo.component';
+import { CounterComponent } from './unit-testing-demo/components/counter/counter.component';
 
 // Main Switching Box
 @NgModule({
@@ -30,7 +32,9 @@ import { ProductsModule } from './products/products.module';
     ContactComponent,
     UserInfoComponent,
     ReportsComponent,
-    ColorizerDirective
+    ColorizerDirective,
+    UnitTestingDemoComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule, 

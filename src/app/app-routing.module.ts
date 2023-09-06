@@ -4,6 +4,7 @@ import { HomeComponent } from './home/components/home/home.component';
 import { ConceptsComponent } from './concepts/components/concepts.component';
 import { AboutUsComponent } from './about/components/about-us/about-us.component';
 import { ContactComponent } from './contact/components/contact/contact.component';
+import { UnitTestingDemoComponent } from './unit-testing-demo/components/unit-testing-demo/unit-testing-demo.component';
 
 // Let's config the routes
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
     path: 'products',
     loadChildren: () =>
       import('./products/products.module').then(m => m.ProductsModule)
-  }
+  },
+  { path: 'unit-testing-demo', component: UnitTestingDemoComponent }
 ];
 
 // Main Entry gate
